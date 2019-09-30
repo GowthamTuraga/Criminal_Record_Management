@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class delete 
 { 
-	public static void main(String args[]) 
+	public void deletion()
 	{ 
 		String id = "1001"; 
 		String pwd = "Hyderabad"; 

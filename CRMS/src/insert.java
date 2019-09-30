@@ -3,7 +3,7 @@
 
 public class insert
 { 
-	public static void main(String args[]) 
+	public void insertion()
 	{ 
 		//String Id = "1002"; 
 		//String Name = "James"; 

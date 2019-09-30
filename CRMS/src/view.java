@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class view 
 { 
-	public static void main(String args[]) 
+	public void viewing()
 	{ 
 		String Id = "1002"; 
 		String Place = "Kolkata"; 

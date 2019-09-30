@@ -1,7 +1,7 @@
 import java.sql.*;
 public class connect
 {
-	public static void main(String args[])
+	public void Connection()
 	{
 		try
 		{

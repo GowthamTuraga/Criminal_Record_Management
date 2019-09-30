@@ -2,7 +2,7 @@ import java.sql.*;
 
 public class update 
 { 
-	public static void main(String args[]) 
+	public void updation() 
 	{ 
 		String id = "1001"; 
 		String place = "Mumbai"; 
@@ -30,4 +30,4 @@ public class update
 			System.out.println(e); 
 		} 
 	} 
-} 
+}
