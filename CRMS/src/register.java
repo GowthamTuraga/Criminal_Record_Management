@@ -32,7 +32,7 @@ public class register {
 	        	   Matcher m2 = p2.matcher(mobile);
 	        	   if(m2.find() && m2.equals(m2))
 	        	   {
-	        		   System.out.println("Set your password ::\nNOTE:- Must contain Atleast one Uppercase letter, one Lowercase letter, one Special Character ,Except Numbers and Space.");
+	        		   System.out.println("Set your password ::\nNOTE:- Must contain Atleast one Uppercase letter, one Lowercase letter, one Special Character along with Numbers and withou Spaces.");
 	        		   String password = in.next();
 	        		   Pattern p3 = Pattern.compile("((?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})");
 	        		   Matcher m3 = p3.matcher(password);

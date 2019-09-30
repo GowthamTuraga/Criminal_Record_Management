@@ -28,7 +28,7 @@ public class login {
 				Matcher m1 = p1.matcher(password);
 				if(m1.find() && m1.group().equals(password))
 				{
-					System.out.println("Sucessfully Completed login\n\n1) Check Connection\n2) Insert Data\n3)TO View  Records4)Update Records\n5)Delete Records");
+					System.out.println("Sucessfully Completed login\n\nType 1 to Check Connection\nType 2 to Insert Data\nType 3 to View  Records\nType 4 to Update Records\nType 5 to Delete Records");
 					choice = in.nextInt();
 					switch(choice)
 					{
@@ -79,9 +79,9 @@ public class login {
 			{
 				System.out.println("Invalid Username ");
 			}
-			System.out.println("TO continue type yes\n");
+			System.out.println("Type Exit to return to the login page");
 	           take = in.next();
-		}while(take.equals("yes"));
+		}while(take.equals("Exit"));
 		
 		in.close();
 		}

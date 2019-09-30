@@ -1,13 +1,17 @@
 
 // deleting from Database 
-import java.sql.*; 
+import java.sql.*;
+import java.util.Scanner; 
 
 public class delete 
 { 
 	public void deletion()
-	{ 
-		String id = "1001"; 
-		String pwd = "Hyderabad"; 
+	{   
+		Scanner in = new Scanner(System.in);
+		System.out.println("Type the Id you want to delete");
+		int id = in.nextInt(); 
+		System.out.println("Type the Name you want to delete");
+		String name = in.next();
 		try
 		{ 
 			Class.forName("oracle.jdbc.driver.OracleDriver"); 
@@ -15,7 +19,7 @@ public class delete
 			Statement st = conn.createStatement(); 
 				
 			// Deleting from database 
-			String q1 = "DELETE from CrimeRecord WHERE id = '" + id + "' AND place = '" + pwd + "'"; 
+			String q1 = "DELETE from CrimeRecord WHERE Id = '" + id + "' AND Name = '" + name + "'"; 
 					
 			int x = st.executeUpdate(q1); 
 			

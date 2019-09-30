@@ -1,13 +1,16 @@
-// Java program to illustrate 
-// selecting from Database 
+// viewing from Database 
 import java.sql.*; 
+import java.util.Scanner;
 
 public class view 
 { 
 	public void viewing()
-	{ 
-		String Id = "1002"; 
-		String Place = "Kolkata"; 
+	{
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter the Id you want to view");
+		int Id = in.nextInt(); 
+		System.out.println("Enter the name you want to view");
+		String name = in.next();
 		try
 		{ 
 			Class.forName("oracle.jdbc.driver.OracleDriver"); 
@@ -15,7 +18,7 @@ public class view
 			Statement stmt = con.createStatement(); 
 			
 			// SELECT query 
-			String q1 = "select * from CrimeRecord WHERE Id = '" + Id + "' AND Place = '" + Place + "'"; 
+			String q1 = "select * from CrimeRecord WHERE Id = '" + Id + "' AND Name = '" + name + "'"; 
 			ResultSet rs = stmt.executeQuery(q1); 
 			if (rs.next()) 
 			{ 

@@ -5,12 +5,7 @@ public class insert
 { 
 	public void insertion()
 	{ 
-		//String Id = "1002"; 
-		//String Name = "James"; 
-		//String Place = "Kolkata"; 
-		//String blood = "A+"; 
-		//String reason = "Murder";
-		
+	
 		try
 		{ 
 			Class.forName("oracle.jdbc.driver.OracleDriver"); 
@@ -28,11 +23,6 @@ public class insert
 			ps.setString(3, Place);
 			ps.setString(4, blood);
 			ps.setString(5, reason);
-	
-			//Statement st = conn.createStatement(); 
-			
-			// Inserting data in database 
-			//String q1 = "insert into CrimeRecord values('" +Id+ "', '" +Name+"', '" +Place+ "', '" +blood+ "','" +reason+ "')"; 
 			 
 			int x = ps.executeUpdate(); 
 			if (x > 0)			 
