@@ -50,11 +50,12 @@ public class login {
 						System.out.println("\n");
 						break;
 						
-					//case 4 :
-						//update upd = new update();
-						
-						//System.out.println("\n");
-						//break;
+					case 4 :
+						update upd = new update();
+						upd.updation();
+						System.out.println("\n");
+						break;
+
 						
 					case 5 :
 						delete del = new delete();
